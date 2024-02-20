@@ -98,7 +98,7 @@ class LoginPage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20, right: 20),
                   child: MyButton(
                     icon: Icons.admin_panel_settings_rounded,
-                    Btname: "Continue >",
+                    Btname: "Login >",
                     ontap: () {
                       Get.offAll(const SignupPage());
                     },
