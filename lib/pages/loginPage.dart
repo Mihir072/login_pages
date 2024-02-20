@@ -12,15 +12,6 @@ class LoginPage extends StatelessWidget {
     // ignore: unused_local_variable
     TextEditingController demo = TextEditingController();
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Color1,
-      //   title: Text(
-      //     " Login ",
-      //     style: TextStyle(fontWeight: FontWeight.bold),
-      //   ),
-      //   centerTitle: true,
-      // ),
-
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -29,7 +20,7 @@ class LoginPage extends StatelessWidget {
             decoration: const BoxDecoration(
                 color: Colors.white,
                 image: DecorationImage(
-                    image: AssetImage("assets/images/img4.jpg"),
+                    image: AssetImage("assets/image/img4.jpg"),
                     alignment: Alignment.topCenter)),
             child: Padding(
               padding: const EdgeInsets.only(top: 300),
@@ -65,7 +56,6 @@ class LoginPage extends StatelessWidget {
                     ),
                   ],
                 ),
-
                 Padding(
                   padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
                   child: TextField(
@@ -100,19 +90,10 @@ class LoginPage extends StatelessWidget {
                     icon: Icons.admin_panel_settings_rounded,
                     Btname: "Login >",
                     ontap: () {
-                      Get.offAll(const SignupPage());
+                      Get.offAll(SignupPage());
                     },
                   ),
                 ),
-                //         SizedBox(
-                //           height: 50,
-                //         ),
-                // SizedBox(height: 20),
-                // MyButton(
-                //   icon: Icons.person_add,
-                //   Btname: "SIGN UP",
-                //   ontap: () {},
-                // ),
               ]),
             ),
           ),
